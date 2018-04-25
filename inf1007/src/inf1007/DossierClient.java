@@ -22,10 +22,13 @@ public class DossierClient {
 		return false;
 	}
 	
-	public boolean getClient(Client Client)
+	public Client getClient(int i)
 	{
-		//TODO search client by....
-		return false;
+		if(!ListeClient.get(i).equals(null))
+		{
+			return ListeClient.get(i);
+		}
+		return null;
 	}
 	
 	public boolean modifierClient(Client Client)
