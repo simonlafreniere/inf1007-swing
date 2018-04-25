@@ -8,5 +8,10 @@ public class Paiement {
 	{
 		this.montant=montant;
 	}
+	
+	public int getMontant()
+	{
+		return montant;
+	}
 
 }

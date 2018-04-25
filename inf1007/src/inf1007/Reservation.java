@@ -9,6 +9,7 @@ public class Reservation {
 	private Date dateReservation;
 	private Date dateRetour;
 	private Statut Statut;
+	private float prix;
 	
 	public Reservation(Client Client, Vehicule Vehicule)
 	{
@@ -65,5 +66,14 @@ public class Reservation {
 	public void setStatut(Statut statut) {
 		Statut = statut;
 	}
+	
+	public void setPrix(float montant)
+	{
+		prix=montant;
+	}
 
+	public float getPrix()
+	{
+		return prix;
+	}
 }
