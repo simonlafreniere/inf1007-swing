@@ -13,9 +13,15 @@ public class Vehicule {
 	private ArrayList<NoteDeService> Notes;
 	
 	
-	public Vehicule() 
+	public Vehicule(String IDVehicule, String Nom, String Type, String Marque, String Moteur, int Kilometrage) 
 	{
-		
+		this.IDVehicule = IDVehicule;
+		this.Nom = Nom;
+		this.Type = Type;
+		this.Marque = Marque;
+		this.Moteur = Moteur;
+		this.Kilometrage = Kilometrage;
+		this.Notes = new ArrayList<NoteDeService>();
 	}
 
 
@@ -86,6 +92,11 @@ public class Vehicule {
 
 	public void setNotes(ArrayList<NoteDeService> notes) {
 		Notes = notes;
+	}
+	
+	public String toString()	
+	{
+		return this.Nom;
 	}
 
 }

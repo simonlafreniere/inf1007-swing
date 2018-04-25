@@ -18,6 +18,7 @@ public class Client {
 	private CarteCredit Carte = null;
 	private Statut Statut;
 	private ArrayList<Conducteur> conducteurs;
+	private ArrayList<Facture> factures;
 
 	
 	public Client(int IDClient, String Nom, String Prenom, String Adresse, String Ville, String Province,
@@ -138,5 +139,17 @@ public class Client {
 	public void setStatut(Statut statut) {
 		Statut = statut;
 	}
+
+	public ArrayList<Facture> getFactures() {
+		return factures;
+	}
+
+	public void setFactures(ArrayList<Facture> factures) {
+		this.factures = factures;
+	}
 	
+	public String toString()	
+	{
+		return this.Nom;
+	}
 }
