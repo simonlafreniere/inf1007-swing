@@ -2,14 +2,16 @@ package inf1007;
 
 public class Paiement {
 	
-	protected int montant;
+	protected float montant;
+	protected static int id=0;
 	
-	public Paiement(int montant)
+	public Paiement(float montant)
 	{
 		this.montant=montant;
+		id++;
 	}
 	
-	public int getMontant()
+	public float getMontant()
 	{
 		return montant;
 	}
